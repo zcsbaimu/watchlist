@@ -1,6 +1,20 @@
-<h1>{{ username }}的个人主页</h1>
-{% if bio %}
-    <p>{{ bio }}</p>
-    {% else %}
-    <p>自我介绍</p>
-    {% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ name }}'s Watchlist</title>
+</head>
+<body>
+<h2>{{ name }}'s Watchlist</h2>
+{# 使用length 过滤器获取movies变量的长度 #}
+<p>{{ movies|length }} Titles</p>
+<ul>
+    {% for movie in movies %} {# 迭代movies变量 #}
+    <li>{{ movie.title }}-{{ movie.year }}</li>
+    {% endfor %}
+</ul>
+<footer>
+    <img src="http://helloflask.com/totoro.gif">
+    <h1>&copy; 2018 </h1>
+</footer>
+</body>
