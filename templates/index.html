@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
     <meta charset="utf-8">
-    <title>{{ name }}'s Watchlist</title>
+    <title>{{ user.name }}'s Watchlist</title>
+    <link rel="icon" href="{{ url_for('static',filename='images/1.webp' )}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" type="text/css">
 </head>
 <body>
-<h2>{{ name }}'s Watchlist</h2>
+<h2>
+    <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/1.jpg') }}">
+    {{ name }}'s Watchlist
+</h2>
+<img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/totoro.gif') }}">
+    <img src="{{ url_for('static',filename='images/1.jpg') }}">
+<h2>{{ user.name }}'s Watchlist</h2>
 {# 使用length 过滤器获取movies变量的长度 #}
 <p>{{ movies|length }} Titles</p>
 <ul>
@@ -14,17 +21,5 @@
     <li>{{ movie.title }}-{{ movie.year }}</li>
     {% endfor %}
 </ul>
-<footer>
-    <img src="http://helloflask.com/totoro.gif">
-    <h1>&copy; 2018 </h1>
-</footer>
-</body>
-=======
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
 </body>
 </html>
->>>>>>> d972e13abd70ae5a1246e459bbdc6e9fae8d9a33
