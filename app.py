@@ -54,21 +54,21 @@ def login():
         username=request.form['username']
         password=request.form['password']
         if not username or not password:
-            flash('INvalid input')
+            flash('Invalid input')
             return  redirect(url_for('login'))
         user=User.query.first()
         if username==user.username and user.verify_password(password):
             login_user(user)
             flash('login success')
             return redirect(url_for('index'))
-        flash('Invalid username or password')
+        flash('Invalid username or password.')
         return  redirect(url_for('index'))
     return render_template('login.html')
 @app.route('/logout')
 @login_required
 def logout():
     logout_user()
-    flash('Goodbye')
+    flash('Goodbye.')
     return redirect(url_for('index'))
 
 @app.route('/movie/edit/<int:movie_id>', methods=['GET', 'POST'])
@@ -84,7 +84,7 @@ def edit(movie_id):
         movie.title = title
         movie.year = year
         db.session.commit()
-        flash('Item,updated.')
+        flash('Item updated.')
         return redirect(url_for('index'))  # 重定向回主页
 
     return render_template('edit.html', movie=movie)
@@ -106,7 +106,7 @@ def initdb(drop):
     if drop:
         db.drop_all()
     db.create_all()
-    click.echo('Initialiezd database')
+    click.echo('Initialized database')
 
 
 @app.cli.command()
