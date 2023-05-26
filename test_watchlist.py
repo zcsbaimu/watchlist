@@ -1,6 +1,7 @@
 import unittest
-from app import app,db
-
+from watchlist import app, db
+from watchlist.models import Movie, User
+from watchlist.commands import forge, initdb
 
 class WatchlistTestCase(unittest.TestCase):
     def setUp(self):
@@ -246,5 +247,4 @@ class WatchlistTestCase(unittest.TestCase):
         self.assertTrue(User.query.first().verify_password('456'))
 if __name__ == '__main__':
     with app.app_context():
-        from app import app,db, Movie, User, initdb, forge
         unittest.main()
