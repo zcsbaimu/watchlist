@@ -7,7 +7,7 @@ from watchlist.models import User, Movie
 @app.cli.command()
 def forge():
     db.create_all()
-    name = "baimu"
+    name = "linghua"
     movies = [
         {'title': 'My Neighbor Totoro', 'year': '1988'},
         {'title': 'Dead Poets Society', 'year': '1989'},
@@ -20,6 +20,7 @@ def forge():
         {'title': 'WALL-E', 'year': '2008'},
         {'title': 'The Pork of Music', 'year': '2012'}, ]
     user = User(name=name)
+    db.session.add(user)
     for m in movies:
         movie = Movie(title=m['title'], year=m['year'])
         db.session.add(movie)
