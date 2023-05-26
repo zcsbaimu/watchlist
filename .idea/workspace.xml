@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc40dd86-df10-4cf9-bf00-16cd3b3f50a1" name="Changes" comment="5.25.22.29">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watchlist/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/commands.py" afterDir="false" />
-    </list>
+    <list default="true" id="bc40dd86-df10-4cf9-bf00-16cd3b3f50a1" name="Changes" comment="5.25.22.29" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +44,6 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -231,7 +225,7 @@
       <workItem from="1684979964514" duration="6074000" />
       <workItem from="1685015880664" duration="8971000" />
       <workItem from="1685068586376" duration="6127000" />
-      <workItem from="1685076858112" duration="257000" />
+      <workItem from="1685076858112" duration="878000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1684756414608</created>
@@ -261,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685024975601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5.25.22.29">
+      <created>1685077263558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685077263558</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
